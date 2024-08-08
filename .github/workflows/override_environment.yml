@@ -10,3 +10,8 @@ jobs:
       - env:
           EXAMPLE: Defined by step level
         run: echo "${EXAMPLE}"
+      - run: echo "${EXAMPLE}"
+  print2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${EXAMPLE}"
